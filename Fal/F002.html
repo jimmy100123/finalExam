@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>林義閔的自我介紹</title>
+  <style>
+    :root {
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --primary: #4a90e2;
+      --section-light: #ffffff;
+      --section-accent1: #e8f4fd;
+      --section-accent2: #fffdf2;
+      --section-accent3: #fce4ec;
+      --section-accent4: #e8f5e9;
+    }
+
+    body.dark {
+      --bg-color: #121212;
+      --text-color: #f0f0f0;
+      --section-light: #1e1e1e;
+      --section-accent1: #1b3a4b;
+      --section-accent2: #2b2b1f;
+      --section-accent3: #4a2c36;
+      --section-accent4: #1e3d32;
+    }
+
+    * {
+      box-sizing: border-box;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--section-light);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1em 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid var(--primary);
+    }
+
+    .toggle-theme {
+      margin-left: 30px;
+      background-color: transparent;
+      border: 1px solid var(--primary);
+      padding: 6px 12px;
+      border-radius: 5px;
+      color: var(--primary);
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    section {
+      padding: 120px 20px 100px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    section:nth-of-type(1) {
+      animation-delay: 0.3s;
+    }
+
+    section:nth-of-type(2) {
+      animation-delay: 0.6s;
+    }
+
+    section:nth-of-type(3) {
+      animation-delay: 0.9s;
+    }
+
+    section:nth-of-type(4) {
+      animation-delay: 1.2s;
+    }
+
+    section:nth-of-type(5) {
+      animation-delay: 1.5s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    h1, h2 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+
+    p, li {
+      font-size: 1.2em;
+      line-height: 1.8;
+      max-width: 700px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li::before {
+      content: "✔️ ";
+      margin-right: 8px;
+    }
+
+    .about { background-color: var(--section-light); }
+    .skills { background-color: var(--section-accent1); }
+    .portfolio { background-color: var(--section-accent2); }
+    .baby { background-color: var(--section-accent3); }
+    .contact { background-color: var(--section-accent4); }
+
+    a {
+      color: #00aaff;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#about">關於我</a>
+      <a href="#skills">技能</a>
+      <a href="#life">生活</a>
+      <a href="#baby">珍藏</a>
+      <a href="#contact">聯絡我</a>
+    </nav>
+    <button class="toggle-theme" onclick="toggleTheme()">🌙 夜間模式</button>
+  </header>
+
+  <section id="about" class="about">
+    <h1>嗨，我是林義閔</h1>
+    <p>
+      　　我的個性害羞內向，因為非常喜歡玩遊戲，所以我的夢想是自主獨立開發一款遊戲，為次同時有在修習編程、2D/3D美術、企劃，平常除了喜歡玩遊戲還喜歡煮飯、吃飯，拿手的料理是"流心蛋包飯"，運動項目喜歡射箭，雖然沒有自己的弓箭，但是一年級時體育課有體驗就愛上了，嗜好還有收集空氣槍，在軍事方面對於單兵武器有濃厚的興趣，所以有在收藏屬於自己的空氣槍，未來還想嘗試購買相機為自己添加更多技能。
+      <br />
+      <b>最後，很高興認識你，祝你有美好的一天。</b>
+      <br />
+      <h2><em>Have a nice day.</em></h2>
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>技能</h2>
+    <ul>
+      <li>C#</li>
+      <li>blender低模創作</li>
+      <li>3DSMax(快忘記怎麼用了但是還會)</li>
+      <li>Unity</li>
+      <li>畫小垃圾圖</li>
+      <li>桌球(會握球拍)</li>
+      <li>烹調</li>
+      <li>吹口哨</li>
+      <li>特別會花錢</li>
+    </ul>
+  </section>
+
+  <section id="life" class="life">
+    <h2>生活</h2>
+    <h3>我各種吃吃喝喝還有出去玩的照片</h3>
+    <p>
+      <img src="pic/d001.jpg" alt="吃01" style="max-width: 300px; height: auto;">
+      <img src="pic/d002.jpg" alt="吃02" style="max-width: 300px; height: auto;">
+      <img src="pic/d003.jpg" alt="吃03" style="max-width: 300px; height: auto;">
+      <br>去田季發爺吃烤肉，吃好飽
+      <br><a href="https://maps.app.goo.gl/5F85bdByrWigpxrN6">田季發爺</a><br>
+      <img src="pic/d004.jpg" alt="吃04" style="max-width: 300px; height: auto;">
+      <img src="pic/d005.jpg" alt="吃05" style="max-width: 300px; height: auto;">
+      <br>吃Nu pasta好貴而且吃起來還好
+      <br><a href="https://maps.app.goo.gl/uFf5ko6EpGmvzm4p8">Nupasta</a><br>
+      <img src="pic/d006.jpg" alt="吃06" style="max-width: 300px; height: auto;">
+      <br>熱死人的天氣來一杯芒果冰沙超讚(如果你沒有對芒果過敏)
+      <br><a href="https://maps.app.goo.gl/ubRqeBP1XQiJb86b6">西門吹雪</a><br>
+      <img src="pic/d007.jpg" alt="吃07" style="max-width: 300px; height: auto;">
+      <br>吃冰，那個牛奶口味的冰超好吃，奶香超濃郁
+      <br><a href="https://maps.app.goo.gl/DShX8d1BeByG83Qp7">榕樹下璞味綿綿冰</a><br>
+      <img src="pic/d008.jpg" alt="吃08" style="max-width: 300px; height: auto;">
+      <br>高雄車站附近小巷子裡的義大利麵，便宜好吃份量又大
+      <br><a href="https://maps.app.goo.gl/4a288NtB1KMF89oy6">派諾尼義大利麵</a><br>
+      <img src="pic/d009.jpg" alt="吃09" style="max-width: 300px; height: auto;">
+      <br>去五鮮級吃火鍋，肉好多好爽
+      <br><a href="https://maps.app.goo.gl/3VVAZJWsEqLa2Pbc9">五鮮級鍋物專賣 永康中正店</a><br>
+      <img src="pic/d010.jpg" alt="吃10" style="max-width: 300px; height: auto;">
+      <br>小小一碗的烏龍麵雖然貴但是好吃
+      <br><a href="https://maps.app.goo.gl/GpzRyAPHySNh6RSk8">丼飯堂開元店</a><br>
+      <img src="pic/d011.jpg" alt="吃11" style="max-width: 300px; height: auto;">
+      <br>去成大附近吃牛排
+      <br><a href="https://maps.app.goo.gl/WF4P2xZ3TttXYTuDA">大夯牛排館Da-hang Steak house</a><br>
+      <img src="pic/d012.jpg" alt="吃12" style="max-width: 300px; height: auto;">
+      <br>一間其實很普通的火鍋店
+      <br><a href="https://maps.app.goo.gl/XbXoD5DTdoPmDWhYA">鍋天下</a><br>
+      <img src="pic/d013.jpg" alt="吃13" style="max-width: 300px; height: auto;">
+      <br>南應大對面的義大利麵店也便宜好吃而且吃得飽
+      <br><a href="https://maps.app.goo.gl/ULjQ9Td2oWgcaqns9">黑盤PASTA</a><br>
+      <h3>出去玩拍的照片</h3>
+      <img src="pic/e001.jpg" alt="毛01" style="max-width: 300px; height: auto;"><br>
+      <img src="pic/e002.jpg" alt="毛02" style="max-width: 300px; height: auto;"><br>
+      <img src="pic/e003.jpg" alt="毛03" style="max-width: 300px; height: auto;"><br>
+      <img src="pic/e004.jpg" alt="毛04" style="max-width: 300px; height: auto;"><br>
+      <img src="pic/e005.jpg" alt="毛05" style="max-width: 300px; height: auto;"><br>
+      <img src="pic/e006.jpg" alt="毛06" style="max-width: 300px; height: auto;"><br>
+      <img src="pic/e007.jpg" alt="毛07" style="max-width: 300px; height: auto;"><br>
+      <img src="pic/e008.jpg" alt="毛08" style="max-width: 300px; height: auto;"><br>
+      <img src="pic/e009.jpg" alt="毛09" style="max-width: 300px; height: auto;"><br>
+      <img src="pic/e010.jpg" alt="毛10" style="max-width: 300px; height: auto;"><br>
+      <img src="pic/e011.jpg" alt="毛11" style="max-width: 300px; height: auto;"><br>
+      <img src="pic/e012.jpg" alt="毛12" style="max-width: 300px; height: auto;"><br>
+    </p>
+  </section>
+
+  <section id="baby" class="baby">
+    <h2>我的小寶貝們</h2>
+    <p>
+      <br>這一大串全部都是我收集的寶貝吊飾<br>
+      <img src="pic/a001.jpg" alt="吊飾串" style="max-width: 300px; height: auto;">
+    <br>全部攤開來<br>
+      <img src="pic/a002.jpg" alt="吊飾串01" style="max-width: 300px; height: auto;">
+      <img src="pic/a003.jpg" alt="吊飾串02" style="max-width: 300px; height: auto;">
+      <img src="pic/a004.jpg" alt="吊飾串03" style="max-width: 300px; height: auto;">
+    <br>還有珍藏的飯友立牌<br>
+    <img src="pic/a005.jpg" alt="吊飾串04" style="max-width: 300px; height: auto;">
+    <br>干貝瓦片流心蛋包飯<br>
+    <img src="pic/b001.jpg" alt="蛋包飯01" style="max-width: 300px; height: auto;">
+    <img src="pic/b002.jpg" alt="蛋包飯02" style="max-width: 300px; height: auto;">
+    <br>收集的空氣槍<br>
+    <img src="pic/c001.jpg" alt="槍01" style="max-width: 300px; height: auto;">
+    <img src="pic/c002.jpg" alt="槍02" style="max-width: 300px; height: auto;">
+    <img src="pic/c003.jpg" alt="槍03" style="max-width: 300px; height: auto;">
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>聯絡我</h2>
+    <p>
+       Email：stp70028@gmail.com<br />
+       FB：<a href="https://www.facebook.com/lin.yi.min.398657" target="_blank">-->點我<--</a><br />
+       電話：0989795050
+    </p>
+  </section>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
